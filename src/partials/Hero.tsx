@@ -10,51 +10,39 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>Bob Lin</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
+          Former PM turned programmer 🧑‍💻 | Proficient in Go, Python, and Rust 🚀
+          | Making the tech world my new home 🏠 | Let's code and innovate
+          together! 💡{' '}
           <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
+            #AI
           </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
           <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
+            #GPT
           </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
         </>
       }
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          src="/assets/images/avatar.jpg"
           alt="Avatar image"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
+          <a href="https://twitter.com/lin_bob57617">
             <HeroSocial
               src="/assets/images/twitter-icon.png"
               alt="Twitter icon"
             />
           </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
+          <a href="https://www.youtube.com/channel/UCyOTA3hgglp05Yw9JslvAaQ">
             <HeroSocial
               src="/assets/images/youtube-icon.png"
               alt="Youtube icon"
