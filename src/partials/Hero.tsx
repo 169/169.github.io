@@ -29,7 +29,7 @@ const Hero = () => (
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.jpg"
+          src="/assets/images/icons/avatar.jpg"
           alt="Avatar image"
           loading="lazy"
         />
@@ -38,37 +38,37 @@ const Hero = () => (
         <>
           <a href="https://twitter.com/lin_bob57617">
             <HeroSocial
-              src="/assets/images/twitter-icon.svg"
+              src="/assets/images/icons/twitter-icon.svg"
               alt="Twitter icon"
             />
           </a>
           <a href="https://www.youtube.com/channel/UCyOTA3hgglp05Yw9JslvAaQ">
             <HeroSocial
-              src="/assets/images/youtube-icon.svg"
+              src="/assets/images/icons/youtube-icon.svg"
               alt="Youtube icon"
             />
           </a>
           <a href="https://space.bilibili.com/1082406125">
             <HeroSocial
-              src="/assets/images/bilibili-icon.svg"
+              src="/assets/images/icons/bilibili-icon.svg"
               alt="Bilibili icon"
             />
           </a>
           <a href="https://github.com/169">
             <HeroSocial
-              src="/assets/images/github-icon.svg"
+              src="/assets/images/icons/github-icon.svg"
               alt="Github icon"
             />
           </a>
           <a href="https://www.reddit.com/user/lin_bob57617">
             <HeroSocial
-              src="/assets/images/reddit-icon.svg"
+              src="/assets/images/icons/reddit-icon.svg"
               alt="Reddit icon"
             />
           </a>
           <a href="https://stackoverflow.com/users/22993295/bob-lin">
             <HeroSocial
-              src="/assets/images/stackoverflow-icon.svg"
+              src="/assets/images/icons/stackoverflow-icon.svg"
               alt="Stackoverflow icon"
             />
           </a>

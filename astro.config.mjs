@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
+import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import robotsTxt from 'astro-robots-txt';
 import { astroImageTools } from 'astro-imagetools';
@@ -23,5 +24,6 @@ export default defineConfig({
     sitemap(),
     robotsTxt(),
     astroImageTools,
+    mdx(),
   ],
 });
