@@ -7,4 +7,13 @@ imgSrc: '/assets/images/image-post7.jpeg'
 imgAlt: 'Image post 7'
 ---
 
+---
+import {YouTube} from 'astro-lazy-youtube-embed'
+---
+
+<YouTube
+  title="Just Curious - Limmy's Homemade Show"
+  videoId="FfTT7mxGw8I"
+/>
+
 Full typography example at [this page](../sixth-post/).
