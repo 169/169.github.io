@@ -1,0 +1,24 @@
+---
+layout: '@/templates/BasePost.astro'
+title: 深入解读MRKL系统
+description: 结合langchain的MRKL实现和用法，让大家深度理解MRKL是什么
+pubDate: 2023-11-27T12:00:00Z
+imgSrc: '/assets/images/mrkl.png'
+imgAlt: MRKL'
+---
+
+ChatGPT、GPT-4 这种模型确实令人惊叹，但这些模型也有内在的局限性就是训练的数据是固定的，它不支持做额外的事情，也就是说数据源没有某个数据，你是不能获取或者推理出来的。这其实是一个非常大的问题，例如无法访问你公司的数据库，无法访问当前实时信息（例如最新的 天气 ，当前发生的新闻和人物，热播的电视剧电影），另外作为预测模型，他是没有算术能力的，即便你问的计算问题模型回答对了，也是由于训练的语料库正好有这个计算内容而已。所以在最新的ChatGPT里面，如果你使用GPT-4，甚至用API，都会支持你使用web浏览器，数据分析，也就是通过python解释器做分析等等额外的补充功能，这样用起来模型数据源会受限于时间节点的问题就可以极大的缓解了。
+
+最后就是，模型更新成本高得令人望而却步，它根本不是个人或者小组织可以负担的了的，所以如果我们有某些额外的数据需求，是无法通过微调这样的方式解决的。
+
+但是即便现在OPENAI官方已经支持了web浏览器，数据分析这些功能，依然很不够，甚至开发者不想使用必应的搜索方案，而是要换成其他更垂直的方案，那么怎么办呢？
+
+这就要说到MRKL方案。
+
+[MRKL](https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl#fn-1)全称是「Modular Reasoning, Knowledge and Language」
+
+MRKL可以说是一个系统，它由一组模块（例如计算器、天气API、数据库等）和一个路由器组成，决定如何将自然语言查询“路由”到适当的模块。这里是论文页面，不过我知道大家和我一样不喜欢这种非常晦涩难懂的论文，所以大家可以通过下面视频深入理解它。
+
+import { YouTube } from 'astro-embed'
+
+<YouTube id="prXkN5-TXq0" />

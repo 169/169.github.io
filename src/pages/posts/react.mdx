@@ -1,0 +1,38 @@
+---
+layout: '@/templates/BasePost.astro'
+title: 深入解读ReAct框架
+description: 并结合langchain的ReAct实现和用法，让大家深度理解ReAct是什么
+pubDate: 2023-11-28T12:00:00Z
+imgSrc: '/assets/images/react.png'
+imgAlt: 'ReAct'
+---
+
+ReAct 框架是一种特别的MRKL，他的全程是这个，翻过过来就是「在语言模型中协同推理和行动」，其实表述已经很直白了。我们先看没有这些协同过程之前，也就是论文配图左边的部分。
+
+![image](https://github.com/langchain-ai/langchain/assets/10000925/4b50a2e5-853c-49b0-b9d7-29dab4428b47)
+
+单纯的推理主要指COT，也就是chain-of-thought，这都是比较早期的解决方案，单纯的行动现在也没有比较收到欢迎的项目例子，所以现在进化的就是右边的ReAct。
+
+在这个模式下，llm为任务生成口头推理轨迹和行动。这使得系统能够执行动态推理来创建、维护和调整行动计划，同时还能够与外部网站或者数据库等进行交互，以将附加信息合并到推理中。这里有个展示显示了 ReAct 的示例，大家感受下执行问答所涉及的不同步骤。
+
+![image](https://github.com/langchain-ai/langchain/assets/10000925/0f5c0742-be6a-4d32-9f05-8f2c737f7042)
+
+
+可以看到，这个过程是由多个思考-行动-观察步骤组成，它生成推理轨迹允许模型诱导、跟踪和更新行动计划，甚至也会处理异常，当然这个例子没有体验，在实际业务和代码里面是会有对应处理逻辑的。然后也可以看到，其中操作步骤允许与外部源（例如知识库或环境）交互并收集信息。因为载这个框架下允许llm与外部工具交互，以检索更多信息，从而获得更可靠和更真实的响应。
+
+llm可能由于数据不够充分，他自己都不太有信息，但是通过推理和行动，还可以提高llm可解释性和可信度。
+
+综上的各种展示，可以看到展示模型思考行动的完整过程，这对于调试和修改提示语以及过程中用到的那些tools都有很好的帮助。所以在语言和决策任务方面的表现是目前最佳的实践方案。
+
+在langchain内置它的支持，另外例如返回中间结果的功能，其实就是把ReAct的过程展示出来。其实在很多基于openai api实现的商业产品中都有很多实际的应用，其次是现在官方自定义GPT里面的action，其实就是这个react里面的act，只是它现在隐藏了reason部分罢了。
+
+全部内容可以看下面的视频👇🏻
+
+import { YouTube } from 'astro-embed'
+
+<YouTube id="Kj2gypI9f-M" />
+
+### 相关链接
+
+* https://react-lm.github.io/
+* https://www.promptingguide.ai/techniques/react
