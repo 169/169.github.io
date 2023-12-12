@@ -1,0 +1,75 @@
+---
+layout: '@/templates/BasePost.astro'
+title: 如何使用Whisper给视频添加字幕
+description: 介绍项目, 了解如何使用它可以自动给视频添加中文和英文字幕
+pubDate: 2023-12-12T12:00:00Z
+imgSrc: '/assets/images/video-add-subtitles.png'
+imgAlt: 'Video add subtitles'
+---
+
+### 项目地址
+
+https://github.com/169/video-translation
+
+### 项目介绍
+
+这个项目是我写的，它使用开源的[OpenAI Whisper](https://github.com/openai/whisper)和OpenAI API（[TTS](https://platform.openai.com/docs/guides/text-to-speech)）来实现。
+
+视频翻译是一个正在进行的项目。 其目的如下：
+
+* 视频下载。 ✅
+* 从视频中获取音频，默认为mp3格式。 ✅
+* 根据音频生成字幕并将其翻译成其他语言。 ✅
+* 为视频添加硬字幕。 ✅
+* 支持基于字幕的其他语言视频的制作。Doing
+
+所以vt可以自动为在线视频和本地视频添加各种语言的字幕。未来还会支持视频中的语音还可以自动转换为其他语言。 欢迎关注本项目并贡献代码~
+
+### 设置
+
+我使用管理项目依赖:
+
+```
+poetry install
+```
+
+另外转码和添加字幕使用`ffmpeg`，所以你需要先安装它:
+
+```
+# on Ubuntu or Debian
+sudo apt update && sudo apt install ffmpeg
+
+# on Arch Linux
+sudo pacman -S ffmpeg
+
+# on MacOS using Homebrew (https://brew.sh/)
+brew install ffmpeg
+
+# on Windows using Chocolatey (https://chocolatey.org/)
+choco install ffmpeg
+
+# on Windows using Scoop (https://scoop.sh/)
+scoop install ffmpeg
+```
+
+### 使用
+
+默认会基于源视频生成添加了中文和英文字幕的2个视频。你可以使用如下2种方式使用它:
+
+#### 从网络下载的视频
+
+```
+poetry run python main.py web --url=https://www.youtube.com/watch?v=CqRrByI-ONE
+```
+
+#### 本地视频
+
+如果你使用剪映或者其他视频制作软件做好了视频，可以使用`local`子命令:
+
+```
+poetry run vt local --path='/Users/169/Movies/test.mov
+```
+
+import { YouTube } from 'astro-embed'
+
+<YouTube id="ROq28NZjkjw" />
