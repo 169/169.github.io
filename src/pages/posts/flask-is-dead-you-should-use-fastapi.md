@@ -145,6 +145,10 @@ WSGI的问题是无法利用异步达到性能和效率提升，所以Django组�
 
 是的，我认为现在是抛弃Flask的时候了，如果你是一个Python Web服务的初学者请直接使用FastAPI，如果你是一个有一定工作经验的人，我建议下一个项目请使用FastAPI甚至替代现在的项目，欢迎讨论~
 
+### Update: 2024-12-24
+
+写了一篇补充: [理性参与讨论《Flask 已死，FastAPI 永生》](https://zhuanlan.zhihu.com/p/673847164)
+
 ### 延伸阅读
 
 1. https://lp.jetbrains.com/python-developers-survey-2022
