@@ -11,14 +11,14 @@ imgAlt: 'deeplearning-ai-videos'
 
 ### Youtube
 
-[1. Functions, Tools and Agents with LangChain](https://www.youtube.com/watch?v=AJZ-l1pRVnw&list=PLbd7ntv6PxC3iMEGGW2NwR_cjz8dzPHC9)
-[2. 《与大型语言模型结对编程》 Pair Programming with a Large Language Model](https://www.youtube.com/playlist?list=PLbd7ntv6PxC0D6zGnA605sbC7n7AVCA7z)
-[3. 《从人类反馈中强化学习》Reinforcement Learning From Human Feedback](https://www.youtube.com/playlist?list=PLbd7ntv6PxC0bAzZKGr-ansamB037duvZ)
-[4. 《构建和评估高级 RAG 应用程序》Building and Evaluating](https://www.youtube.com/playlist?list=PLbd7ntv6PxC3r-z9JHaPAf_yfa017QtpA)
+1. [Functions, Tools and Agents with LangChain](https://www.youtube.com/watch?v=AJZ-l1pRVnw&list=PLbd7ntv6PxC3iMEGGW2NwR_cjz8dzPHC9)
+2. [《与大型语言模型结对编程》 Pair Programming with a Large Language Model](https://www.youtube.com/playlist?list=PLbd7ntv6PxC0D6zGnA605sbC7n7AVCA7z)
+3. [《从人类反馈中强化学习》Reinforcement Learning From Human Feedback](https://www.youtube.com/playlist?list=PLbd7ntv6PxC0bAzZKGr-ansamB037duvZ)
+4. [《构建和评估高级 RAG 应用程序》Building and Evaluating](https://www.youtube.com/playlist?list=PLbd7ntv6PxC3r-z9JHaPAf_yfa017QtpA)
 
 ### Bilibili
 
-[1. Functions, Tools and Agents with LangChain](https://www.bilibili.com/video/BV1fb4y1G765/)
-[2. 《与大型语言模型结对编程》 Pair Programming with a Large Language Model](https://www.bilibili.com/video/BV1HG411k7X4/)
-[3. 《从人类反馈中强化学习》Reinforcement Learning From Human Feedback](https://www.bilibili.com/video/BV16w411V7qy)
-[4. 《构建和评估高级 RAG 应用程序》Building and Evaluating](https://www.bilibili.com/video/BV1Ge411z7f3/)
+1. [Functions, Tools and Agents with LangChain](https://www.bilibili.com/video/BV1fb4y1G765/)
+2. [《与大型语言模型结对编程》 Pair Programming with a Large Language Model](https://www.bilibili.com/video/BV1HG411k7X4/)
+3. [《从人类反馈中强化学习》Reinforcement Learning From Human Feedback](https://www.bilibili.com/video/BV16w411V7qy)
+4. [《构建和评估高级 RAG 应用程序》Building and Evaluating](https://www.bilibili.com/video/BV1Ge411z7f3/)
