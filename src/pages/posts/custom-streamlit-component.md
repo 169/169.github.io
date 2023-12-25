@@ -63,7 +63,7 @@ imgAlt: 'custom-streamlit-component'
 
 上一节已经可以跑起来一个我这个组件了。如果想要开发它，可以创建虚拟环境，再`streamlit run`:
 
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -94,7 +94,7 @@ streamlit run basic.py
 
 例如我这个组件，后端调用是这样的:
 
-```
+```python
 result = streamlit_component_video(
     path="./examples.mp4",
     mimetype="video/mp4",
@@ -204,7 +204,7 @@ pip install wheel twine
 
 接着就可以生成Python包和上传了:
 
-```
+```bash
 python setup.py sdist bdist_wheel
 twine upload --verbose dist/*
 ```
